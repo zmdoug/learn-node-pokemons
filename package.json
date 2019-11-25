@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon src/server.js"
   },
   "repository": "https://github.com/zmdoug/pokeApi.git",
   "author": "Doug Mz <zmdoug@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "sucrase": "^3.10.1"
   }
 }
