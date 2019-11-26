@@ -1,0 +1,8 @@
+{
+  "name": "Pokemon API",
+  "version": "1.0.0",
+  "description": "Pokemon API Documentation",
+  "template": {
+      "forceLanguage": "pt_br"
+  }
+}

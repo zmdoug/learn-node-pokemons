@@ -1,0 +1,1 @@
+define({  "name": "Pokemon API",  "version": "1.0.0",  "description": "Pokemon API Documentation",  "template": {    "forceLanguage": "pt_br"  },  "sampleUrl": false,  "defaultVersion": "0.0.0",  "apidoc": "0.3.0",  "generator": {    "name": "apidoc",    "time": "2019-11-26T10:27:28.644Z",    "url": "http://apidocjs.com",    "version": "0.18.0"  }});

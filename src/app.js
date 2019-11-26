@@ -16,6 +16,7 @@ middlewares() {
 }
 
 routes() {
+  this.server.use(express.static('public'));
   this.server.use(routes);
  }
 }

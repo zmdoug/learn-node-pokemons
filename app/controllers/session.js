@@ -10,14 +10,32 @@ class SessionController {
       if (err) {
         next(err);
       } else {
+        if(!userInfo) {
+         return res.status(400).json({ 
+            status: "error", 
+            message: "Invalid email/password.", 
+            data:null
+          });
+        }
         if(bcrypt.compareSync(req.body.password, userInfo.password)) {
           const token = jwt.sign({ id: userInfo._id }, authConfig.secret, { 
             expiresIn: authConfig.expiresIn 
           });
           const { name, email } = userInfo;
-          res.json({ status: "success", message: "User authorized.", data:{ user: { name, email }, token:token }});
+          return res.json({ 
+            status: "success", 
+            message: "User authorized.", 
+            data:{ 
+              user: { name, email }, 
+              token:token 
+            }
+          });
         }else{
-          res.json({ status: "error", message: "Invalid email/password.", data:null});
+         return res.status(400).json({ 
+            status: "error", 
+            message: "Invalid email/password.", 
+            data:null
+          });
         }
       }
     });
