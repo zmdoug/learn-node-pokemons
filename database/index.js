@@ -1,4 +1,5 @@
 import User from '../app/models/user';
+import Pokemon from '../app/models/pokemon';
 import mongoose from 'mongoose';
 
 class Database {
