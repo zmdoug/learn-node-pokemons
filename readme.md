@@ -8,7 +8,7 @@ yarn, npm, insomnia, docker
 
 - Clonar o projeto
 `git clone https://github.com/zmdoug/pokeApi.git`
-- Acessar a pasta pokeApi e digitar o comando `yarn` 
+- Acessar a pasta do projeto e digitar o comando `yarn` 
 para instalar as dependências.
 - Instalar docker
 - Criar um container mongodb
